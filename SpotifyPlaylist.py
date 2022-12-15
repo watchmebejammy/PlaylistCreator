@@ -5,8 +5,8 @@ import requests
 from spotipy import oauth2
 import re
 
-SPOTIPY_CLIENT_ID = '132b00d51d6b4ca7839df7478d553364'
-SPOTIPY_CLIENT_SECRET = '87f3b3e6679945c3876df00cd37a3bfc'
+SPOTIPY_CLIENT_ID = ''
+SPOTIPY_CLIENT_SECRET = ''
 SCOPE = ('user-read-recently-played,user-library-read,user-read-currently-playing,playlist-read-private,playlist-modify-private,playlist-modify-public,user-read-email,user-modify-playback-state,user-read-private,user-read-playback-state')
 SPOTIPY_REDIRECT_URI = 'http://localhost:8080/'
 sp_oauth = oauth2.SpotifyOAuth( SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET,SPOTIPY_REDIRECT_URI,scope=SCOPE )
